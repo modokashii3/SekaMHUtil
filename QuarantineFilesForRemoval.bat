@@ -1,7 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: Set the target and destination folders
 set "target_folder=%~dp0"
 set "destination_folder=%~dp0LEFTOVER FILES FOR DELETION"
 
