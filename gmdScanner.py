@@ -1,3 +1,6 @@
+# Search and print designated strings across multiple GMD files. 
+# Default set toネルギガンテin"_jpn.gmd"
+
 from pathlib import Path
 import re
 
