@@ -24,7 +24,7 @@ def search_files(search_string, context_length):
             print(f"Error processing {file_path}: {str(e)}")
 
 def main():
-    search_string = "father"
+    search_string = "父"
     context_length = 1
     search_files(search_string, context_length)
     input("Press Enter to exit...")
