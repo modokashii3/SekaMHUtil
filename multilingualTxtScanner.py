@@ -1,7 +1,7 @@
 import unicodedata
 from pathlib import Path
 
-def normalize_japanese_text(text):
+def normalizeJapaneseText(text):
     return unicodedata.normalize('NFKC', text)
 
 def search_files(search_string, context_length):
@@ -10,7 +10,7 @@ def search_files(search_string, context_length):
             with file_path.open("r", encoding="utf-8") as file:
                 lines = file.readlines()
                 for i, line in enumerate(lines):
-                    normalized_line = normalize_japanese_text(line)
+                    normalized_line = normalizeJapaneseText(line)
                     if search_string in normalized_line:
                         print(f"Found '{search_string}' in {file_path} at line {i+1}")
                         start = max(0, i - context_length)
@@ -24,7 +24,7 @@ def search_files(search_string, context_length):
             print(f"Error processing {file_path}: {str(e)}")
 
 def main():
-    search_string = "父"
+    search_string = "欹ての間"
     context_length = 1
     search_files(search_string, context_length)
     input("Press Enter to exit...")
