@@ -16,5 +16,6 @@ with open("D:\\Download\\actionListInput.txt", "r") as file_object: ##example
 for string in ary :
     print(string)
 
+## run this on VSCode when the input is in place.
 ## actionListInput.txt uses https://github.com/AsteriskAmpersand/Leviathon/blob/main/common/ActionDumps/
 ## make sure every line in the input has consistent format
